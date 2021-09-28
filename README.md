@@ -16,3 +16,6 @@ wget https://data.megengine.org.cn/models/weights/atss_res50_coco_3x_800size_42d
 
 work.ipynb是当时的训练和各种验证实验，以及最后的提交测试集的记录。
 工程名字需要改为现在repo名字 MegviiTrafficdet，以及路径需要修改
+
+训练是4卡训的，模型存的目录为logs/atss_res50_800size_trafficdet_demo_gpus4/epoch_23.pkl
+测试由于单卡去测有多线程读取出错问题，将模型存的目录名字从 atss_res50_800size_trafficdet_demo_gpus4 改成了 atss_res50_800size_trafficdet_demo_gpus1
